@@ -19,6 +19,7 @@ Task 6:
 You have an array of 5 towns and their coordinates, create an function which imports these towns into the list and print them out.
 As well create an function to print out just towns in the northern hemisphere.  
 
+###Output:
 <pre>
 Sebastians-MacBook-Pro:test2_WS sebastian$ ./a.out  
 
