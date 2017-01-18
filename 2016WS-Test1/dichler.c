@@ -11,8 +11,6 @@
 #include <stdlib.h>
 
 #define DEBUG 0
-#define PROTOTYPE 1
-#define RANGE 1
 
 int main (int argc, char *argv[])
 {
@@ -47,12 +45,7 @@ int main (int argc, char *argv[])
         printf("Counter argv = %s\n", argv[2]);
         printf("Counter coun = %d\n", counter);
 #endif
-        
-#if PROTOTYPE
-        
-        //printf("Without Range:\n\n");
-
-        
+     
         while (counter_up < counter)
         {
             
@@ -77,129 +70,6 @@ int main (int argc, char *argv[])
             counter--;
             printf("\n");
         }
-#endif
-        
-#if RANGE
-        
-        printf("With Range:\n\n");
-        
-        switch (counter_original)
-        {
-            case 1:
-                printf("%c\n", symbol[0]);
-                break;
-            
-            case 2:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            case 3:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            case 4:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            case 5:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            case 6:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            case 7:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-            
-            case 8:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            case 9:
-                printf("%c\n", symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c%c\n", symbol[0], symbol[0], symbol[0], symbol[0]);
-                printf("%c%c%c\n", symbol[0], symbol[0], symbol[0]);
-                printf("%c%c\n", symbol[0], symbol[0]);
-                printf("%c\n", symbol[0]);
-                break;
-                
-            default:
-                printf("ERROR: UNKNOWN COUNTER (RANGE 1 - 9)\n");
-                return -1;
-                break;
-        }
-        
-#endif
         
     }
     
