@@ -1,21 +1,21 @@
 # DoubleLinkedLists
 
-Task 1:  
+#####Task 1:  
 Create a struct for the name of a town and its coordinates, longitude and latitude.  
 
-Task 2:  
+#####Task 2:  
 Calculate the needed space of this struct.  
 
-Task 3:  
+#####Task 3:  
 Create an input function which imports the entry, name of the town, longitude and latitude. New Entries start at the Header of the list.  
 
-Task 4:  
+#####Task 4:  
 Create an print function which shows every entry of the list from the bottom entry to the first entry.  
 
-Task 5:  
+#####Task 5:  
 Create an function which frees the list.  
 
-Task 6:  
+#####Task 6:  
 You have an array of 5 towns and their coordinates, create an function which imports these towns into the list and print them out.
 As well create an function to print out just towns in the northern hemisphere.  
 
